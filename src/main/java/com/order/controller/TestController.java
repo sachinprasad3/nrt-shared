@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/test")
 public class TestController {
 	
-	@GetMapping("/hi/{msg}")
+	@GetMapping("/hi")
 	public String createOrder(@RequestParam("msg") String msg) {
 		
 		String str = "Hi..."+msg; 
@@ -17,4 +17,11 @@ public class TestController {
 		return str;
 	}
 	
+	@GetMapping("/hello")
+	public String helloMsg(@RequestParam("msg") String msg) {
+		
+		String str = "Hello My Dear..."+msg; 
+		
+		return str;
+	}
 }
