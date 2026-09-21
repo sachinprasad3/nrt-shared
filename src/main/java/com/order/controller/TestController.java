@@ -33,4 +33,12 @@ public class TestController {
 		return str;
 	}
 	
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		
+		String str = "welcome here for CI/CD"; 
+		
+		return str;
+	}
 }
