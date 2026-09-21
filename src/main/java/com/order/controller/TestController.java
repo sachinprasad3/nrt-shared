@@ -24,4 +24,13 @@ public class TestController {
 		
 		return str;
 	}
+	
+	@GetMapping("/say-my-name")
+	public String helloMsg2() {
+		
+		String str = "SHAZAM..."; 
+		
+		return str;
+	}
+	
 }
