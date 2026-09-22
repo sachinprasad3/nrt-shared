@@ -37,7 +37,7 @@ public class TestController {
 	@GetMapping("/welcome")
 	public String welcome() {
 		
-		String str = "welcome here for CI/CD"; 
+		String str = "Welcome here for CI/CD with aws and jenkins"; 
 		
 		return str;
 	}
